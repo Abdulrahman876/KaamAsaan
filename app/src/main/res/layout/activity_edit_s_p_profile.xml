@@ -1,0 +1,507 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/item_scrollvw"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".EditSPProfileActivity"
+    android:background="@color/colorWhite">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="clip_vertical|bottom|center"
+        android:layout_weight="0.2"
+        android:paddingTop="40dp"
+        >
+
+        <LinearLayout
+            android:layout_below="@id/imv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:visibility="invisible"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginTop="5dp">
+            <!--            android:id="@+id/btn_pic_gallery"-->
+            <androidx.appcompat.widget.AppCompatImageButton
+
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="3dp"
+                android:background="@drawable/circle_background2"
+                android:text="Upload Profile Picture">
+
+            </androidx.appcompat.widget.AppCompatImageButton>
+
+            <androidx.appcompat.widget.AppCompatImageButton
+                android:id="@+id/btn_pic_camera"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/circle_background2"
+                android:layout_marginBottom="3dp"
+                android:text="Upload Profile Picture">
+
+            </androidx.appcompat.widget.AppCompatImageButton>
+
+            <androidx.appcompat.widget.AppCompatImageButton
+                android:id="@+id/btn_rotate"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="2dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/circle_background2"
+                android:layout_marginBottom="3dp"
+                android:text="Upload Profile Picture">
+
+            </androidx.appcompat.widget.AppCompatImageButton>
+
+
+        </LinearLayout>
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/iv_prof_pic"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/customer"
+            app:civ_border_color="@color/mainaccent"
+            app:civ_border_width="2dp"
+            >
+
+        </de.hdodenhof.circleimageview.CircleImageView>
+
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:id="@+id/btn_pic_gallery"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="-30dp"
+            android:layout_marginBottom="3dp"
+            android:layout_marginRight="-40dp"
+            android:background="@drawable/circle_backgound4"
+            android:layout_below="@+id/imv"
+            android:layout_toRightOf="@+id/imv"
+            android:src="@drawable/ic_baseline_image_white_24"
+            android:text="Upload Profile Picture">
+
+        </androidx.appcompat.widget.AppCompatImageButton>
+
+
+    </LinearLayout>
+
+
+
+
+
+    <EditText
+        android:id="@+id/ed_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linear_layout_pic"
+        android:textColor="@color/colorBlack"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginTop="20dp"
+        android:padding="5dp"
+        android:background="@drawable/logintxtfield_border"
+        android:hint="Name"
+        android:textSize="18sp"></EditText>
+
+
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/ed_phone"
+        android:padding="5dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/ed_name"
+        android:hint="Phone"
+        android:textSize="18sp"
+        android:background="@drawable/logintxtfield_border"
+        android:textColor="@color/colorBlack"
+        >
+
+    </EditText>
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_longitude"
+        android:padding="5dp"
+        android:id="@+id/ed_bio"
+        android:textSize="18sp"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginTop="20dp"
+        android:hint="Bio"
+        android:background="@drawable/logintxtfield_border"
+        android:textColor="@color/colorBlack"
+        >
+    </EditText>
+
+    <EditText
+        android:id="@+id/ed_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ed_bio"
+        android:hint="password"
+        android:background="@drawable/logintxtfield_border"
+        android:padding="5dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/colorBlack"
+        android:textSize="20dp">
+    </EditText>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="20dp"
+        android:visibility="invisible"
+        android:orientation="horizontal"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:paddingStart="30dp"
+            android:paddingEnd="30dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:id="@+id/tv_latitude"
+                android:layout_below="@+id/ed_phone"
+                android:textSize="18sp"
+                android:padding="5dp"
+                android:textColor="@color/colorBlack"
+                android:background="@drawable/logintxtfield_border"
+                >
+            </TextView>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:paddingStart="30dp"
+            android:paddingEnd="30dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:id="@+id/tv_longitude"
+                android:layout_below="@+id/ed_phone"
+                android:layout_toRightOf="@id/tv_latitude"
+                android:textSize="18sp"
+                android:padding="5dp"
+                android:textColor="@color/colorBlack"
+                android:background="@drawable/logintxtfield_border"
+                >
+            </TextView>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ed_phone"
+        android:layout_toRightOf="@id/tv_longitude"
+        android:text="Change Location"
+        android:layout_gravity="center"
+        android:textSize="18sp"
+        android:padding="5dp"
+        android:textColor="@color/colorWhite"
+        android:background="@drawable/login_button_border"
+        android:id="@+id/btn_changelocation"
+        >
+
+    </Button>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ed_password"
+        android:layout_marginTop="20dp"
+        android:id="@+id/layout_time"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Availability Time"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:padding="5dp"
+            android:textAlignment="center"
+            android:id="@+id/tv_title_tme"
+            android:textColor="@color/mainaccent"
+            />
+
+        <EditText
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/start_hours"
+            android:layout_below="@+id/tv_title_tme"
+            android:background="@drawable/logintxtfield_border"
+            android:textSize="18sp"
+            android:padding="5dp"
+            android:textColor="@color/colorBlack"
+            android:layout_marginLeft="80dp"
+            android:layout_marginTop="5dp"
+            android:inputType="number"
+            android:layout_marginBottom="3dp"
+            android:maxLength="2"
+
+
+            />
+        <EditText
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/start_minutes"
+            android:layout_below="@+id/tv_title_tme"
+            android:layout_toRightOf="@+id/start_hours"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/logintxtfield_border"
+            android:textSize="18sp"
+            android:padding="5dp"
+            android:textColor="@color/colorBlack"
+            android:layout_marginTop="5dp"
+            android:inputType="number"
+            android:layout_marginBottom="3dp"
+            android:maxLength="2"
+            />
+
+        <TextView
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_colon"
+            android:layout_below="@+id/tv_title_tme"
+            android:layout_toRightOf="@+id/start_minutes"
+            android:layout_marginLeft="10dp"
+            android:textSize="20sp"
+            android:textAlignment="center"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="3dp"
+            android:text=":"/>
+
+        <EditText
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/end_hours"
+            android:layout_below="@+id/tv_title_tme"
+            android:layout_toRightOf="@+id/tv_colon"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/logintxtfield_border"
+            android:textSize="18sp"
+            android:padding="5dp"
+            android:textColor="@color/colorBlack"
+            android:layout_marginTop="5dp"
+            android:inputType="number"
+            android:layout_marginBottom="3dp"
+            android:maxLength="2"
+            />
+
+        <EditText
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/end_minutes"
+            android:layout_below="@+id/tv_title_tme"
+            android:layout_toRightOf="@+id/end_hours"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/logintxtfield_border"
+            android:textSize="18sp"
+            android:padding="5dp"
+            android:textColor="@color/colorBlack"
+            android:layout_marginTop="5dp"
+            android:inputType="number"
+            android:layout_marginBottom="3dp"
+            android:maxLength="2"
+            />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/layout_visitcost"
+        android:layout_below="@+id/layout_responsetime"
+        android:layout_marginBottom="0dp"
+        android:paddingStart="50dp"
+        android:paddingEnd="50dp"
+        android:layout_marginTop="20dp"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Visit Cost"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:padding="5dp"
+            android:textAlignment="center"
+            android:id="@+id/tv_title_visitcost"
+            android:textColor="@color/mainaccent"
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_title_visitcost"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="5dp"
+            android:padding="5dp"
+            android:textColor="@color/colorBlack"
+            android:textSize="18dp"
+            android:background="@drawable/logintxtfield_border"
+            android:inputType="number"
+            android:id="@+id/ed_visit_cost"/>
+
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/layout_responsetime"
+        android:layout_below="@+id/layout_time"
+        android:layout_marginTop="20dp"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Response Time"
+            android:textSize="20sp"
+            android:padding="5dp"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:id="@+id/tv_title_responseTime"
+            android:textColor="@color/mainaccent"
+            />
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_title_responseTime"
+            android:layout_marginTop="0dp"
+            android:weightSum="1"
+            android:id="@+id/radio_group"
+            >
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_title_responseTime"
+                android:layout_marginTop="3dp"
+                android:id="@+id/radio_30min"
+                android:text="30 minutes"
+                android:checked="true"/>
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/radio_30min"
+                android:layout_marginTop="2dp"
+                android:id="@+id/radio_1hour"
+                android:text="1 hour"/>
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/radio_1hour"
+                android:layout_marginTop="2dp"
+                android:id="@+id/radio_1.5hour"
+                android:text="1.5 hours"/>
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/radio_1.5hour"
+                android:layout_marginTop="2dp"
+                android:id="@+id/radio_2hour"
+                android:text="2 hours"/>
+
+        </RadioGroup>
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/layout_visitcost"
+        android:id="@+id/txt_lbl_categories"
+        android:text="Category"
+        android:padding="5dp"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        android:textColor="@color/mainaccent"
+        android:textSize="20sp"
+        ></TextView>
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_below="@+id/txt_lbl_categories"
+        android:id="@+id/list_categories"
+        android:layout_marginTop="0dp"
+
+
+        ></ListView>
+
+ <Button
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:layout_below="@+id/list_categories"
+     android:id="@+id/btn_save"
+     android:text="Save"
+     android:layout_gravity="center"
+     android:textSize="20sp"
+     android:padding="5dp"
+     android:layout_marginBottom="10dp"
+     android:textColor="@color/colorWhite"
+     android:background="@drawable/login_button_border"
+     >
+
+
+ </Button>
+
+
+
+
+
+
+</LinearLayout>
+</ScrollView>

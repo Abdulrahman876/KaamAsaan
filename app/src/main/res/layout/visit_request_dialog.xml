@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/linear_layout_btns"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:gravity="center"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+
+        <Button
+            android:id="@+id/btn_send_visit_request"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/login_button_border"
+            android:text="Send Request"
+            android:textSize="18dp"
+            android:padding="5dp"
+            android:textColor="@color/colorWhite"
+            ></Button>
+
+        <Button
+            android:id="@+id/btn_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/login_button_border"
+            android:text="Cancel"
+            android:padding="5dp"
+            android:textSize="18dp"
+            android:textColor="@color/colorWhite"
+
+            ></Button>
+
+
+    </LinearLayout>
+</RelativeLayout>

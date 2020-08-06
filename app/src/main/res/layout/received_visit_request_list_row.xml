@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:visibility="visible"
+    android:background="@drawable/list_border_layout"
+    >
+
+
+    <TextView
+        android:id="@+id/lbl_received_visit_request_Id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Request Id:"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="5dp"
+        android:textColor="@color/mainaccent"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        >
+
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/txt_received_visit_request_Id"
+        android:layout_toRightOf="@+id/lbl_received_visit_request_Id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="7dp"
+        android:layout_marginLeft="5dp"
+        android:textSize="14sp"
+        android:textColor="@color/colorBlack"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/lbl_from"
+        android:layout_below="@+id/lbl_received_visit_request_Id"
+        android:layout_marginLeft="5dp"
+        android:text="From:"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/mainaccent"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        >
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/txt_from"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lbl_received_visit_request_Id"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="12dp"
+        android:layout_toRightOf="@+id/lbl_from"
+        android:textColor="@color/colorBlack"
+        android:textSize="14sp"></TextView>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/lbl_potential_time"
+        android:layout_below="@+id/lbl_from"
+        android:text="Potential Time:"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/mainaccent"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        ></TextView>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txt_potential_time"
+        android:layout_below="@+id/lbl_from"
+        android:layout_toRightOf="@id/lbl_potential_time"
+        android:layout_marginTop="12dp"
+        android:layout_marginLeft="5dp"
+        android:textSize="14sp"
+        android:textColor="@color/colorBlack"
+        ></TextView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/lbl_duration"
+        android:layout_below="@+id/lbl_potential_time"
+        android:layout_marginLeft="5dp"
+        android:text="Duration (Hours):"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/mainaccent"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        ></TextView>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txt_duration"
+        android:layout_below="@+id/lbl_potential_time"
+        android:layout_toRightOf="@id/lbl_duration"
+        android:layout_marginTop="12dp"
+        android:layout_marginLeft="5dp"
+        android:textSize="14sp"
+        android:textColor="@color/colorBlack"
+        ></TextView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/lbl_visit_cost"
+        android:layout_below="@+id/lbl_duration"
+        android:text="Visit Cost:"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="5dp"
+        android:textColor="@color/mainaccent"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        ></TextView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txt_visit_cost"
+        android:layout_below="@+id/lbl_duration"
+        android:layout_toRightOf="@id/lbl_visit_cost"
+        android:layout_marginTop="12dp"
+        android:layout_marginLeft="5dp"
+        android:textSize="14sp"
+        android:textColor="@color/colorBlack"
+        >
+
+    </TextView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lbl_visit_cost"
+        android:gravity="center"
+        android:layout_marginBottom="5dp"
+        android:padding="5dp"
+        android:orientation="horizontal"
+        >
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:id="@+id/btn_accept_visit_request"
+            android:text="Accept"
+            android:padding="5dp"
+            android:background="@drawable/login_button_border"
+            android:textColor="@color/colorWhite"
+
+            android:textSize="15sp"
+            >
+
+        </Button>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:id="@+id/btn_reject_visit_request"
+            android:text="Reject"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/login_button_border"
+            android:padding="5dp"
+            android:textColor="@color/colorWhite"
+            android:layout_below="@+id/lbl_visit_cost"
+            android:textSize="15sp"
+            ></Button>
+
+
+    </LinearLayout>
+
+</RelativeLayout>
